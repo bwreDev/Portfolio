@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
@@ -29,7 +33,7 @@ nav {
 }
 
 footer {
-    padding-bottom: 200px;
+    height: 225px;
 }
 
 header {
@@ -41,10 +45,18 @@ header {
     font-family: 'Merriweather', serif;
 }
 
+.name {
+    color: rgb(124, 11, 11);
+}
+
 section {
     min-height: 50px;
     padding: 6% 0;
     color: black;
+}
+
+.bio, .portfolio, .contact {
+    margin-top: 200px;
 }
 
  .icon {

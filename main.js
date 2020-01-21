@@ -1,17 +1,17 @@
 //Auto-scroll on click of navbar and footer links
-$('a[href*="#"]').click(function(event){
+$('a[href*="#"]').click(function (event) {
     if (
-        location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//, '')
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
         &&
         location.hostname == this.hostname
-    ){
+    ) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: target.offset().top
-            }, 500, function(){
+            }, 500, function () {
                 var $target = $(target);
                 $target.focus();
                 if ($target.is(":focus")) {

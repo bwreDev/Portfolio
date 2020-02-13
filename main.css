@@ -11,17 +11,11 @@ body {
 }
 
 main {
-    background-image: url(bkg.jpg);
+    background-image: url(boilerplate.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
-}
-
-nav, footer {
-    padding: 1% 0;
-    background-color: #b6bdc9;
-    color: #353535;
 }
 
 nav {
@@ -34,15 +28,23 @@ nav {
 
 footer {
     height: 225px;
+    background-color: #b6bdc9d2;
 }
 
 header {
     padding: 10%;
-    margin-top: 150px;
     color: rgb(124, 11, 11);
     text-align: center;
     text-shadow: 2px 2px black;
     font-family: 'Merriweather', serif;
+}
+
+h1 {
+    padding: 10px;
+    background-color: #b6bdc9d2;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .name {
@@ -53,18 +55,21 @@ section {
     min-height: 50px;
     padding: 6% 0;
     color: black;
+    max-width: 66%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.bio, .portfolio, .contact {
+#bio, #portfolio, #contact {
     margin-top: 200px;
 }
 
- .icon {
+.icon {
     height: 150px;
     margin-left: 20px;
 }
 
-.nav-bar-links, .footer-bar-links {
+.nav-bar-links {
     font-family: 'Oswald', sans-serif;
     display: block;
     list-style: none;
@@ -75,6 +80,7 @@ section {
     font-size: large;
     padding: 10px;
     margin-top: 30px;
+    background-color: #b6bdc9d2;
 }
 
 .bio-nav, .portfolio-nav, .contact-nav {
@@ -82,7 +88,7 @@ section {
     text-decoration: none;
 }
 
-a:hover {
+.bio-nav:hover, .portfolio-nav:hover, .contact-nav:hover {
     text-decoration: underline;
     color: rgb(124, 11, 11);
 }
@@ -91,16 +97,21 @@ a:hover {
     transform: scale(1.1);
 }
 
-.quiz-app-link {
+.quiz-app-link, .recipe-app-link {
     color: rgb(124, 11, 11);
     font-family: 'Merriweather', serif;
     font-size: larger;
+    text-decoration: none;
+}
+
+.quiz-app-link:hover, .recipe-app-link:hover {
+    text-decoration: underline;
 }
 
 p {
     font-family: 'Oswald', sans-serif;
     border: 2px solid black;
-    background-color: #b6bdc9;
+    background-color: #b6bdc9d2;
     padding: 20px;
     line-height: 2;
     margin-top: 20px;
@@ -113,23 +124,14 @@ p {
     align-items: center;
 }
 
-.screenshot-quiz {
+.screenshot-quiz, .screenshot-recipe-app {
     max-width: 300px;
 }
 
-.quiz-app .screenshot {
+.quiz-app .screenshot, .recipe-app .screenshot {
     display: table;
     margin-left: auto;
     margin-right: auto;
-}
-
-.portfolio a {
-    text-decoration: none;
-    color: rgb(124, 11, 11);
-}
-
-.logos {
-    height: 25px;
 }
 
 .logo-list {
@@ -138,7 +140,7 @@ p {
 
 .contact-links {
     list-style: none;
-    background-color: #b6bdc9;
+    background-color: #b6bdc9d2;
     font-family: 'Oswald', sans-serif;
     padding: 0px 10px;
     text-align: center;
@@ -147,6 +149,12 @@ p {
 .contact-link {
     color: black;
     margin-left: 20px;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+    color: rgb(124, 11, 11);
 }
 
 .contact-img {
@@ -158,7 +166,7 @@ p {
         font-size: x-large;
     }
 
-    .screenshot-quiz {
+    .screenshot-quiz, .screenshot-recipe-app {
         max-width: 500px;
     }
 

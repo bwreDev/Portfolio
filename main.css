@@ -7,10 +7,6 @@ html {
 }
 
 body {
-    margin: 0;
-}
-
-main {
     background-image: url(boilerplate.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -19,7 +15,6 @@ main {
 }
 
 nav {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -32,7 +27,7 @@ footer {
 }
 
 header {
-    padding: 10%;
+    padding-top: calc(1vh + 150px);
     color: rgb(124, 11, 11);
     text-align: center;
     text-shadow: 2px 2px black;
@@ -61,12 +56,13 @@ section {
 }
 
 #bio, #portfolio, #contact {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .icon {
     height: 150px;
     margin-left: 20px;
+    position: absolute;
 }
 
 .nav-bar-links {
@@ -161,13 +157,17 @@ p {
     height: 50px;
 }
 
+.screenshot-quiz, .screenshot-recipe-app {
+    max-width: 200px;
+}
+
 @media screen and (min-width: 750px) {
     body {
         font-size: x-large;
     }
 
     .screenshot-quiz, .screenshot-recipe-app {
-        max-width: 500px;
+        max-width: 400px;
     }
 
     .footer-bar-links, .nav-bar-links {
@@ -181,7 +181,7 @@ p {
 }
 
 @media screen and (min-width: 1500px) {
-    header {
-        margin-top: 50px;
+    .screenshot-quiz, .screenshot-recipe-app {
+        max-width: 600px;
     }
 }

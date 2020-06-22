@@ -1,187 +1,217 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-image: url(boilerplate.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat:no-repeat;
+  background-image: url(tina-dawson-Kim9COAIEGc-unsplash.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 nav {
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 5;
-}
-
-footer {
-    height: 225px;
-    background-color: #b6bdc9d2;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
 }
 
 header {
-    padding-top: calc(1vh + 150px);
-    color: rgb(124, 11, 11);
-    text-align: center;
-    text-shadow: 2px 2px black;
-    font-family: 'Merriweather', serif;
+  padding-top: calc(1vh + 150px);
+  color: rgb(124, 11, 11);
+  text-align: center;
+  text-shadow: 2px 2px black;
+  font-family: 'Merriweather', serif;
 }
 
 h1 {
-    padding: 10px;
-    background-color: #b6bdc9d2;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 10px;
+  background-color: #b6bdc9d2;
+  border-radius: 15px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 46px;
 }
 
 .name {
-    color: rgb(124, 11, 11);
+  color: rgb(124, 11, 11);
 }
 
 section {
-    min-height: 50px;
-    padding: 6% 0;
-    color: black;
-    max-width: 66%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#bio, #portfolio, #contact {
-    margin-top: 150px;
+  min-height: 50px;
+  padding: 6% 0;
+  color: black;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 28px;
 }
 
 .icon {
-    height: 150px;
-    margin-left: 20px;
-    position: absolute;
+  height: 150px;
+  margin-left: 20px;
+  position: absolute;
+  border-radius: 100px;
 }
 
 .nav-bar-links {
-    font-family: 'Oswald', sans-serif;
-    display: block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    float: right;
-    font-size: large;
-    padding: 10px;
-    margin-top: 30px;
-    background-color: #b6bdc9d2;
+  font-family: 'Oswald', sans-serif;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  float: right;
+  font-size: 24px;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: #b6bdc9d2;
+  border-radius: 15px;
 }
 
-.bio-nav, .portfolio-nav, .contact-nav {
-    color: black;
-    text-decoration: none;
+.bio-nav,
+.portfolio-nav,
+.contact-nav {
+  color: black;
+  text-decoration: none;
 }
 
-.bio-nav:hover, .portfolio-nav:hover, .contact-nav:hover {
-    text-decoration: underline;
-    color: rgb(124, 11, 11);
+.bio-nav:hover,
+.portfolio-nav:hover,
+.contact-nav:hover {
+  text-decoration: underline;
+  color: rgb(124, 11, 11);
 }
 
 .icon:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.quiz-app-link, .recipe-app-link {
-    color: rgb(124, 11, 11);
-    font-family: 'Merriweather', serif;
-    font-size: larger;
-    text-decoration: none;
+.quiz-app-link,
+.recipe-app-link,
+.baby-book-link {
+  color: rgb(124, 11, 11);
+  font-family: 'Merriweather', serif;
+  font-size: larger;
+  text-decoration: none;
 }
 
-.quiz-app-link:hover, .recipe-app-link:hover {
-    text-decoration: underline;
+.quiz-app-link:hover,
+.recipe-app-link:hover,
+.baby-book-link:hover {
+  text-decoration: underline;
 }
 
 p {
-    font-family: 'Oswald', sans-serif;
-    border: 2px solid black;
-    background-color: #b6bdc9d2;
-    padding: 20px;
-    line-height: 2;
-    margin-top: 20px;
-    box-shadow: 2px 2px black;
+  font-family: 'Oswald', sans-serif;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #b6bdc9d2;
+  line-height: 2;
+  padding: 10px;
+  box-shadow: 2px 2px black;
 }
 
 .portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.screenshot-quiz, .screenshot-recipe-app {
-    max-width: 300px;
+.screenshot-quiz,
+.screenshot-recipe-app,
+.screenshot-baby-book-app {
+  max-width: 250px;
 }
 
-.quiz-app .screenshot, .recipe-app .screenshot {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
+.quiz-app .screenshot,
+.recipe-app .screenshot,
+.baby-book-app .screenshot {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-list {
-    display: block;
+  display: flex;
+  font-size: 32px;
+  justify-content: space-evenly;
 }
 
 .contact-links {
-    list-style: none;
-    background-color: #b6bdc9d2;
-    font-family: 'Oswald', sans-serif;
-    padding: 0px 10px;
-    text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #b6bdc9d2;
+  border-radius: 15px;
+  padding: 0;
+  margin: 0;
+  font-size: 36px;
 }
 
 .contact-link {
-    color: black;
-    margin-left: 20px;
-    text-decoration: none;
+  color: black;
 }
 
 .contact-link:hover {
-    text-decoration: underline;
-    color: rgb(124, 11, 11);
+  color: rgb(124, 11, 11);
 }
 
-.contact-img {
-    height: 50px;
+@media screen and (min-width: 600px) {
+  .screenshot-quiz,
+  .screenshot-recipe-app,
+  .screenshot-baby-book-app {
+    max-width: 400px;
+  }
+
+  .nav-bar-links {
+    font-size: 32px;
+    margin-right: 25px;
+  }
+
+  .icon {
+    height: 150px;
+  }
+
+  header {
+    padding-top: calc(1vh + 200px);
+  }
 }
 
-.screenshot-quiz, .screenshot-recipe-app {
-    max-width: 200px;
-}
+@media screen and (min-width: 1200px) {
+  .screenshot-quiz,
+  .screenshot-recipe-app,
+  .screenshot-baby-book-app {
+    max-width: 800px;
+  }
 
-@media screen and (min-width: 750px) {
-    body {
-        font-size: x-large;
-    }
+  .icon {
+    height: 200px;
+  }
 
-    .screenshot-quiz, .screenshot-recipe-app {
-        max-width: 400px;
-    }
+  h1 {
+    font-size: 64px;
+  }
 
-    .footer-bar-links, .nav-bar-links {
-        font-size: xx-large;
-        margin-right: 25px;
-    }
+  .contact-links {
+    font-size: 64px;
+  }
 
-    .icon {
-        height: 200px;
-    }
-}
+  p {
+    font-size: 36px;
+  }
 
-@media screen and (min-width: 1500px) {
-    .screenshot-quiz, .screenshot-recipe-app {
-        max-width: 600px;
-    }
+  .nav-bar-links {
+    font-size: 42px;
+  }
+
+  .logo-list {
+    font-size: 42px;
+  }
 }

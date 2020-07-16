@@ -95,7 +95,8 @@ section {
 
 .quiz-app-link,
 .recipe-app-link,
-.baby-book-link {
+.baby-book-link,
+.pocket-book-link {
   color: rgb(124, 11, 11);
   font-family: 'Merriweather', serif;
   font-size: larger;
@@ -104,7 +105,8 @@ section {
 
 .quiz-app-link:hover,
 .recipe-app-link:hover,
-.baby-book-link:hover {
+.baby-book-link:hover,
+.pocket-book-link:hover {
   text-decoration: underline;
 }
 
@@ -126,13 +128,15 @@ p {
 
 .screenshot-quiz,
 .screenshot-recipe-app,
-.screenshot-baby-book-app {
+.screenshot-baby-book-app,
+.screenshot-pocket-book-app {
   max-width: 250px;
 }
 
 .quiz-app .screenshot,
 .recipe-app .screenshot,
-.baby-book-app .screenshot {
+.baby-book-app .screenshot,
+.pocket-book-app .screenshot {
   display: table;
   margin-left: auto;
   margin-right: auto;
@@ -166,7 +170,8 @@ p {
 @media screen and (min-width: 600px) {
   .screenshot-quiz,
   .screenshot-recipe-app,
-  .screenshot-baby-book-app {
+  .screenshot-baby-book-app,
+  .screenshot-pocket-book-app {
     max-width: 400px;
   }
 
@@ -187,7 +192,8 @@ p {
 @media screen and (min-width: 1200px) {
   .screenshot-quiz,
   .screenshot-recipe-app,
-  .screenshot-baby-book-app {
+  .screenshot-baby-book-app,
+  .screenshot-pocket-book-app {
     max-width: 800px;
   }
 

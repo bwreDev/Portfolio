@@ -130,7 +130,7 @@ p {
 .screenshot-recipe-app,
 .screenshot-baby-book-app,
 .screenshot-pocket-book-app {
-  max-width: 250px;
+  max-width: 225px;
 }
 
 .quiz-app .screenshot,
@@ -167,6 +167,15 @@ p {
   color: rgb(124, 11, 11);
 }
 
+@media screen and (min-width: 500px) {
+  .screenshot-quiz,
+  .screenshot-recipe-app,
+  .screenshot-baby-book-app,
+  .screenshot-pocket-book-app {
+    max-width: 300px;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .screenshot-quiz,
   .screenshot-recipe-app,
@@ -186,6 +195,15 @@ p {
 
   header {
     padding-top: calc(1vh + 200px);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .screenshot-quiz,
+  .screenshot-recipe-app,
+  .screenshot-baby-book-app,
+  .screenshot-pocket-book-app {
+    max-width: 600px;
   }
 }
 

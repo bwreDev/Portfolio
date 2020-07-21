@@ -39,8 +39,11 @@ h1 {
   font-size: 46px;
 }
 
-.name {
+.name,
+.label {
   color: rgb(124, 11, 11);
+  font-family: 'Merriweather', serif;
+  font-size: larger;
 }
 
 section {
@@ -75,14 +78,14 @@ section {
   border-radius: 15px;
 }
 
-.bio-nav,
+.about-nav,
 .portfolio-nav,
 .contact-nav {
   color: black;
   text-decoration: none;
 }
 
-.bio-nav:hover,
+.about-nav:hover,
 .portfolio-nav:hover,
 .contact-nav:hover {
   text-decoration: underline;

@@ -14,7 +14,11 @@
     <title>Colton Bonner</title>
     <link rel="stylesheet" href="main.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Merriweather|Oswald&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -25,20 +29,22 @@
         class="icon-nav"
         href="https://github.com/cbonner26118"
         target="_blank"
-        ><img
+      >
+        <img
           alt="icon of me"
           class="icon"
           src="EditedHeadShot.jpeg"
-      /></a>
+        />
+      </a>
       <ul class="nav-bar-links">
         <li class="#about-click">
-          <a class="about-nav" href="#about">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="#projects-click">
-          <a class="portfolio-nav" href="#portfolio">Portfolio</a>
+          <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
         <li class="#contact-click">
-          <a class="contact-nav" href="#contact">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -46,199 +52,344 @@
       <header>
         <h1 class="fullname">Colton Bonner</h1>
       </header>
-      <section class="headline">
+      <section id="headline">
+        <p class="headline-text">
+          Hello, I'm <span class="red">Colton</span>. I am a recent
+          graduate of Thinkful's Engineering Flex Bootcamp and a
+          full-stack software developer wanting to join a strong team
+          to hone my skills even further.
+        </p>
         <p>
-          Hello, I'm <span class="name">Colton</span>. I
-          am a recent graduate of Thinkful's Engineering Flex Bootcamp
-          and a full-stack software developer wanting to join a strong 
-          team to hone my skills even further.</br> I have experience building full-stack 
-          applications using JavaScript, Node.js, Express, PostgreSQL, React.js, HTML, 
+          I have experience building full-stack applications using
+          JavaScript, Node.js, Express, PostgreSQL, React.js, HTML,
           and CSS.
         </p>
       </section>
 
       <section id="about">
-         <p>
-         I was born in southern California in the early '90s, and have spent 
-         more time in the desert than I care to admit. One fantastic side effect of 
-         living in a severely seasonal area is that I have developed a keen sense of 
-         predicting trends and planning accordingly to stay ahead for when the workflow 
-         inevitably drys up. I have always applied myself fully to my work and 
-         anything I find joy or purpose. Whether it was trying to be the fastest busboy 
-         at my first real job, or being as good a husband and father as I am 
-         capable of being, or now learning as much as I can about software development.
-         My self motivating motto is, "there is always someone better,"
-         and this is how I keep myself striving to be better in my personal
-         and professional life. I enjoy being around people who bring out the best in me,
-         and I love it when I can motivate others to reach their goals. I 
-         cannot wait to meet new teammates and learn from them as much as I can, and if 
-         I am fortunate, maybe teach them something too. 
+        <h2 id="about-me" class="red">About Me</h2>
+        <p class="about-me-text">
+          I was born in southern California in the early '90s, and
+          have spent more time in the desert than I care to admit. One
+          fantastic side effect of living in a severely seasonal area
+          is that I have developed a keen sense of predicting trends
+          and planning accordingly to stay ahead for when the workflow
+          inevitably drys up. I have always applied myself fully to my
+          work and anything I find joy or purpose. Whether it was
+          trying to be the fastest busboy at my first real job, or
+          being as good a husband and father as I am capable of being,
+          or now learning as much as I can about software development.
+          My self motivating motto is, "there is always someone
+          better," and this is how I keep myself striving to be better
+          in my personal and professional life. I enjoy being around
+          people who bring out the best in me, and I love it when I
+          can motivate others to reach their goals. I cannot wait to
+          meet new teammates and learn from them as much as I can, and
+          if I am fortunate, maybe teach them something too.
         </p>
       </section>
 
-      <section id="contact">
+      <section class="contact">
         <ul class="contact-links">
           <li>
             <a
               class="contact-link"
               href="mailto:cbonner26118@gmail.com"
-              ><i class="fas fa-envelope"></i></a>
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
           </li>
           <li>
             <a
               class="contact-link"
               href="https://github.com/cbonner26118"
               target="_blank"
-              ><i class="fab fa-github-square"></i></a>
+            >
+              <i class="fab fa-github-square"></i>
+            </a>
           </li>
           <li>
             <a
               class="contact-link"
               href="https://www.linkedin.com/in/coltonbonner/"
               target="_blank"
-              ><i class="fab fa-linkedin"></i></a>
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
           </li>
         </ul>
       </section>
 
       <section id="portfolio">
-        <p class="pocket-book-app">
+        <h2 class="red">Projects</h2>
+        <div class="pocket-book-app">
           <span class="screenshot">
-              <a class="pocket-book-link"
-                href="https://pocket-book-client.vercel.app/"
-                target="_blank">
-            <img 
+            <a
+              class="pocket-book-link"
+              href="https://pocket-book-client.vercel.app/"
+              target="_blank"
+            >
+              <img
                 alt="screenshot-pocket-book-app"
-                class="screenshot-pocket-book-app"
-                src="PocketBookSplash.png" />
-        </a>
-          </span>
-          <a class="pocket-book-link"
-            href="https://pocket-book-client.vercel.app/"
-            target="_blank">Pocket Book:</a>
-            I built a simple finance tracker for users who prefer a less complicated app.
-            I mainly developed this for myself, because most finance trackers I have used
-            become a little unwieldy after time with all their choices.</br>
-            <span class='label'>Tech:</span></br>
-            Node.js, Express, PostgreSQL, React.js, JavaScript, and CSS</br>
-            <span class='label'>Links:</span></br>
-            <a class="pocket-book-link"
-             href="https://pocket-book-client.vercel.app/"
-             target="_blank">Live App</a></br>
-              <a class="pocket-book-link"
-             href="https://github.com/cbonner26118/pocket-book-client"
-             target="_blank">Client Repo</a></br>
-             <a class="pocket-book-link"
-             href="https://github.com/cbonner26118/pocket-book-server"
-             target="_blank">Server Repo</a>
-            <span class="logo-list">
-                <i class="fab fa-node-js"></i>
-                <i class="fas fa-database"></i>
-                <i class="fab fa-react"></i>
-                <i class="fab fa-js"></i>
-                <i class="fab fa-css3-alt"></i>
-              </span>
-      </p>
-          <p class="baby-book-app">
-              <span class="screenshot">
-                  <a class="baby-book-link"
-                    href="https://baby-book-app.now.sh/"
-                    target="_blank">
-                <img 
-                    alt="screenshot-baby-book-app"
-                    class="screenshot-baby-book-app"
-                    src="SplashPage.PNG" />
+                class="project-screenshot"
+                src="PocketBookSplash.png"
+              />
             </a>
-              </span>
-              <a class="baby-book-link"
-                href="https://github.com/cbonner26118/baby-book-app"
-                target="_blank">Baby Book:</a>
-                I built a newborn event tracker, such as diaper changes or feedings, with a simplified app style
-                approach. I created this because I just recently had my firstborn with my wife, 
-                and we needed a simple way to keep track of when our sons' last feeding was, 
-                etc.</br>
-                <span class='label'>Tech:</span></br>
-                Node.js, Express, PostgreSQL, React.js, JavaScript, and CSS</br>
-                <span class='label'>Links:</span></br>
-                <a class="baby-book-link"
-                href="https://baby-book-app.now.sh/"
-                target="_blank">Live App</a></br>
-                 <a class="baby-book-link"
-                href="https://github.com/cbonner26118/baby-book-app"
-                target="_blank">Client Repo</a></br>
-                <a class="baby-book-link"
-                href="https://github.com/cbonner26118/baby-book-api"
-                target="_blank">Server Repo</a>
-                <span class="logo-list">
-                    <i class="fab fa-node-js"></i>
-                    <i class="fas fa-database"></i>
-                    <i class="fab fa-react"></i>
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-css3-alt"></i>
-                  </span>
+          </span>
+          <a
+            class="project-link"
+            href="https://pocket-book-client.vercel.app/"
+            target="_blank"
+          >
+            <h3>
+              Pocket Book:
+            </h3>
+          </a>
+          <p>
+            I built a simple finance tracker for users who prefer a
+            less complicated app. I mainly developed this for myself,
+            because most finance trackers I have used become a little
+            unwieldy after time with all their choices.
           </p>
-        <p class="recipe-app">
-          <span class="screenshot"
-            ><a
+          <h3 class="red">Tech:</h3>
+          <ul class="tech">
+            <li>
+              Node.js
+            </li>
+            <li>
+              Express
+            </li>
+            <li>
+              PostgreSQL
+            </li>
+            <li>
+              React.js
+            </li>
+            <li>
+              JavaScript
+            </li>
+            <li>
+              CSS
+            </li>
+          </ul>
+          <h3 class="red">Links:</h3>
+          <a
+            class="project-link"
+            href="https://pocket-book-client.vercel.app/"
+            target="_blank"
+          >
+            <h4>
+              Live App
+            </h4>
+          </a>
+          <a
+            class="project-link"
+            href="https://github.com/cbonner26118/pocket-book-client"
+            target="_blank"
+          >
+            <h4>
+              Client Repo
+            </h4>
+          </a>
+          <a
+            class="project-link"
+            href="https://github.com/cbonner26118/pocket-book-server"
+            target="_blank"
+          >
+            <h4>
+              Server Repo
+            </h4>
+          </a>
+          <span class="logo-list">
+            <i class="fab fa-node-js"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-css3-alt"></i>
+          </span>
+        </div>
+        <div class="baby-book-app">
+          <span class="screenshot">
+            <a
+              class="baby-book-link"
+              href="https://baby-book-app.now.sh/"
+              target="_blank"
+            >
+              <img
+                alt="screenshot-baby-book-app"
+                class="project-screenshot"
+                src="SplashPage.PNG"
+              />
+            </a>
+          </span>
+          <a
+            class="project-link"
+            href="https://github.com/cbonner26118/baby-book-app"
+            target="_blank"
+          >
+            <h3>
+              Baby Book:
+            </h3>
+          </a>
+          <p>
+            I built a newborn event tracker, such as diaper changes or
+            feedings, with a simplified app style approach. I created
+            this because I just recently had my firstborn with my
+            wife, and we needed a simple way to keep track of when our
+            sons' last feeding was, etc.
+          </p>
+          <h3 class="red">Tech:</h3>
+          <ul class="tech">
+            <li>
+              Node.js
+            </li>
+            <li>
+              Express
+            </li>
+            <li>
+              PostgreSQL
+            </li>
+            <li>
+              React.js
+            </li>
+            <li>
+              JavaScript
+            </li>
+            <li>
+              CSS
+            </li>
+          </ul>
+          <h3 class="red">Links:</h3>
+          <a
+            class="project-link"
+            href="https://baby-book-app.now.sh/"
+            target="_blank"
+          >
+            <h4>
+              Live App
+            </h4>
+          </a>
+          <a
+            class="project-link"
+            href="https://github.com/cbonner26118/baby-book-app"
+            target="_blank"
+          >
+            <h4>
+              Client Repo
+            </h4>
+          </a>
+          <a
+            class="project-link"
+            href="https://github.com/cbonner26118/baby-book-api"
+            target="_blank"
+          >
+            <h4>
+              Server Repo
+            </h4>
+          </a>
+          <span class="logo-list">
+            <i class="fab fa-node-js"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-css3-alt"></i>
+          </span>
+        </div>
+        <div class="recipe-app">
+          <span class="screenshot">
+            <a
               class="recipe-app-link"
               href="https://cbonner26118.github.io/AnythingAPI/"
               target="_blank"
-              ><img
+            >
+              <img
                 alt="screenshot-recipe-app"
-                class="screenshot-recipe-app"
-                src="Anything.PNG" /></a
-          ></span>
+                class="project-screenshot"
+                src="Anything.PNG"
+              />
+            </a>
+          </span>
           <a
-            class="recipe-app-link"
+            class="project-link"
             href="https://github.com/cbonner26118/AnythingAPI"
             target="_blank"
-            >AnythingAPI:</a>
-            I created a random recipe generator to help inspire meal prep and family dinners. 
-            I built this because spending hours planning a set of meals for the week isn't 
-            something that I enjoy doing, so a little help goes a long way. You can search 
-            by cuisine or get a completely random recipe.</br>
-            <span class='label'>Tech:</span></br>
-            HTML5, CSS, JavaScript, jQuery</br>
-            <span class='label'>Links:</span></br>
+          >
+            <h3>
+              AnythingAPI:
+            </h3>
+          </a>
+          <p>
+            I created a random recipe generator to help inspire meal
+            prep and family dinners. I built this because spending
+            hours planning a set of meals for the week isn't something
+            that I enjoy doing, so a little help goes a long way. You
+            can search by cuisine or get a completely random recipe.
+          </p>
+          <h3 class="red">Tech:</h3>
+          <ul class="tech">
+            <li>
+              HTML5
+            </li>
+            <li>
+              CSS
+            </li>
+            <li>
+              JavaScript
+            </li>
+            <li>
+              jQuery
+            </li>
+          </ul>
+          <h3 class="red">Links:</h3>
           <a
-            class="recipe-app-link"
+            class="project-link"
             href="https://cbonner26118.github.io/AnythingAPI/"
             target="_blank"
-            >Live App</a></br>
+          >
+            <h4>
+              Live App
+            </h4>
+          </a>
           <a
-            class="recipe-app-link"
+            class="project-link"
             href="https://github.com/cbonner26118/AnythingAPI"
             target="_blank"
-            >Github Repo</a>
+          >
+            <h4>
+              Github Repo
+            </h4>
+          </a>
           <span class="logo-list">
             <i class="fab fa-html5"></i>
             <i class="fab fa-css3-alt"></i>
             <i class="fab fa-js"></i>
           </span>
-        </p>
+        </div>
       </section>
-
-      <section id="contact">
+      <section class="contact">
         <ul class="contact-links">
           <li>
             <a
               class="contact-link"
               href="mailto:cbonner26118@gmail.com"
-              ><i class="fas fa-envelope"></i></a>
+              ><i class="fas fa-envelope"></i
+            ></a>
           </li>
           <li>
             <a
               class="contact-link"
               href="https://github.com/cbonner26118"
               target="_blank"
-              ><i class="fab fa-github-square"></i></a>
+              ><i class="fab fa-github-square"></i
+            ></a>
           </li>
           <li>
             <a
               class="contact-link"
               href="https://www.linkedin.com/in/coltonbonner/"
               target="_blank"
-              ><i class="fab fa-linkedin"></i></a>
+              ><i class="fab fa-linkedin"></i
+            ></a>
           </li>
         </ul>
       </section>

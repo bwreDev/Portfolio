@@ -12,6 +12,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 nav {
@@ -23,41 +24,50 @@ nav {
 
 header {
   padding-top: calc(1vh + 150px);
-  color: rgb(124, 11, 11);
-  text-align: center;
-  text-shadow: 2px 2px black;
-  font-family: 'Merriweather', serif;
+  margin-top: 10px;
 }
 
 h1 {
   padding: 10px;
   background-color: #b6bdc9d2;
+  color: rgb(124, 11, 11);
+  text-align: center;
   border-radius: 15px;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
   font-size: 46px;
+  border: 2px solid black;
+  line-height: 2;
+  box-shadow: 2px 2px black;
+  text-shadow: 2px 2px black;
+  font-family: 'Merriweather', serif;
 }
 
-.name,
-.label {
+.red {
   color: rgb(124, 11, 11);
   font-family: 'Merriweather', serif;
   font-size: larger;
 }
 
 section {
-  min-height: 50px;
-  padding: 6% 0;
   color: black;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 28px;
+  margin: 40px;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #b6bdc9d2;
+  line-height: 2;
+  padding: 10px;
+  box-shadow: 2px 2px black;
 }
 
 .icon {
-  height: 150px;
+  height: 125px;
   margin-left: 20px;
   position: absolute;
   border-radius: 100px;
@@ -68,26 +78,22 @@ section {
   display: block;
   list-style: none;
   margin: 0;
+  margin-right: 20px;
   padding: 0;
   text-align: right;
   float: right;
   font-size: 24px;
   padding: 10px;
-  margin-top: 30px;
   background-color: #b6bdc9d2;
   border-radius: 15px;
 }
 
-.about-nav,
-.portfolio-nav,
-.contact-nav {
+.nav-link {
   color: black;
   text-decoration: none;
 }
 
-.about-nav:hover,
-.portfolio-nav:hover,
-.contact-nav:hover {
+.nav-link:hover {
   text-decoration: underline;
   color: rgb(124, 11, 11);
 }
@@ -96,31 +102,26 @@ section {
   transform: scale(1.1);
 }
 
-.quiz-app-link,
-.recipe-app-link,
-.baby-book-link,
-.pocket-book-link {
+div {
+  margin-top: 50px;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-link {
   color: rgb(124, 11, 11);
   font-family: 'Merriweather', serif;
   font-size: larger;
   text-decoration: none;
 }
 
-.quiz-app-link:hover,
-.recipe-app-link:hover,
-.baby-book-link:hover,
-.pocket-book-link:hover {
+.project-link:hover {
   text-decoration: underline;
-}
-
-p {
-  font-family: 'Oswald', sans-serif;
-  border: 2px solid black;
-  border-radius: 15px;
-  background-color: #b6bdc9d2;
-  line-height: 2;
-  padding: 10px;
-  box-shadow: 2px 2px black;
 }
 
 .portfolio {
@@ -129,17 +130,11 @@ p {
   align-items: center;
 }
 
-.screenshot-quiz,
-.screenshot-recipe-app,
-.screenshot-baby-book-app,
-.screenshot-pocket-book-app {
-  max-width: 225px;
+.project-screenshot {
+  max-width: 200px;
 }
 
-.quiz-app .screenshot,
-.recipe-app .screenshot,
-.baby-book-app .screenshot,
-.pocket-book-app .screenshot {
+.screenshot {
   display: table;
   margin-left: auto;
   margin-right: auto;
@@ -147,7 +142,7 @@ p {
 
 .logo-list {
   display: flex;
-  font-size: 32px;
+  font-size: 28px;
   justify-content: space-evenly;
 }
 
@@ -171,19 +166,13 @@ p {
 }
 
 @media screen and (min-width: 500px) {
-  .screenshot-quiz,
-  .screenshot-recipe-app,
-  .screenshot-baby-book-app,
-  .screenshot-pocket-book-app {
+  .project-screenshot {
     max-width: 300px;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .screenshot-quiz,
-  .screenshot-recipe-app,
-  .screenshot-baby-book-app,
-  .screenshot-pocket-book-app {
+  .project-screenshot {
     max-width: 400px;
   }
 
@@ -202,19 +191,13 @@ p {
 }
 
 @media screen and (min-width: 800px) {
-  .screenshot-quiz,
-  .screenshot-recipe-app,
-  .screenshot-baby-book-app,
-  .screenshot-pocket-book-app {
+  .project-screenshot {
     max-width: 600px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .screenshot-quiz,
-  .screenshot-recipe-app,
-  .screenshot-baby-book-app,
-  .screenshot-pocket-book-app {
+  .project-screenshot {
     max-width: 800px;
   }
 
@@ -227,18 +210,18 @@ p {
   }
 
   .contact-links {
-    font-size: 64px;
+    font-size: 56px;
   }
 
-  p {
-    font-size: 36px;
+  section {
+    font-size: 32px;
   }
 
   .nav-bar-links {
-    font-size: 42px;
+    font-size: 36px;
   }
 
   .logo-list {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
